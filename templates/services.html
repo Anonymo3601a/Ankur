@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body %}
+
+<div class="container-fluid px-0 ">
+    <img src="/static/cyan_sky.jpg" width="1200" height="500" class="d-block w-100" alt="...">
+    <h1 class="text-center">Services</h1>
+    <div class="text-center">
+        <a href="https://www.youtube.com/">
+            <button type="button" style="margin-bottom:10px" class="btn btn-outline-danger">Youtube</button>
+        </a>
+    </div>
+    <div class="text-center">
+        <div class="btn-group" style="margin-bottom:10px" role="group" aria-label="Basic example">
+            <a href="https://www.djangoproject.com/">
+                <button type="button" style="margin-right:10px" class="btn btn-outline-success">Django</button>
+            </a>
+            <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">
+                <button type="button" style="margin-right:10px" class="btn btn-outline-info">Bootstrap 4.4</button>
+            </a>
+            <a href="https://www.instagram.com/a_vish_u_1/">
+                <button type="button" style="margin-bottom:5px" class="btn btn-outline-danger">Instagram</button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" style="margin-bottom:12px" src="https://www.youtube.com/embed/FdbvrqC6lOY" title="I Bought 10 Off-Brand GPUs… How Bad Are They??" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" controls width="480" >
+              <source src="/static/My Video2.mp4" type="video/mp4" />
+            </video>
+        </div>
+        
+    </div>
+     
+</div>
+
+{% endblock body %}
